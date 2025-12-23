@@ -30,7 +30,7 @@ const libreBaskerville = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Carolina Cordoba | Portfolio",
+    default: "Carolina Cordoba 👩‍💻",
     template: "%s | Carolina Cordoba",
   },
   description: "Personal portfolio showcasing my work in frontend & backend development using Next.js, React and Tailwind CSS.",
