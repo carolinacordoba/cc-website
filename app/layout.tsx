@@ -4,7 +4,7 @@ import "./globals.css";
 
 // Safira March for headings
 const safiraMarch = localFont({
-  src: "./fonts/Safira March.tff",
+  src: "./fonts/Safira March.ttf",
   variable: "--font-heading",
   display: "swap",
   weight: "400",

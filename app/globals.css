@@ -10,34 +10,26 @@
   --color-khaki: #a89f91; /* Cards / borders / CTA backgrounds */
   --color-nude: #dcc6aa; /* Hero / large background areas */
   --color-cream: #f8f5f0; /* General background / section background */
-
-  /* Typography */
-  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-serif: "Georgia", serif;
-  --font-mono: "Courier New", Courier, monospace;
-
-  /* Spacing */
-  --spacing-xs: 0.25rem; /* Extra small spacing */
-  --spacing-sm: 0.5rem; /* Small spacing */
-  --spacing-md: 1rem; /* Medium spacing */
-  --spacing-lg: 2rem; /* Large spacing */
 }
 
 @theme inline {
+  /* Base colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* Sematic mappings */
+  /* Sematic text colors - used with text-* utilities */
   --color-text-primary: var(--color-chocolate);
   --color-text-secondary: var(--color-mocca);
 
+  /* Sematic background colors - used with bg-* utilities */
   --color-bg-main: var(--color-nude);
   --color-bg-soft: var(--color-cream);
 
+  /* Accent colors - used with bg-*, border-*, text-*, etc. */
   --color-accent: var(--color-khaki);
   --color-border-soft: var(--color-khaki);
 
-  /* Font tokens */
+  /* Font tokens - these reference CSS variables set by layout.tsx */
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 }
@@ -55,7 +47,7 @@ body {
   font-family: var(--font-body);
 }
 
-/* Typography */
+/* Typography utilities */
 .font-heading {
   font-family: var(--font-heading);
 }
