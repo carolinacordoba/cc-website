@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f5f0; /* cream as general page background */
+  --foreground: #3c2f2f; /* chocolate as default text color */
+
+  /* Brand Palette */
+  --color-chocolate: #3c2f2f; /* Headings / Key text */
+  --color-mocca: #6b5e57; /* Secondary text / subheadings */
+  --color-khaki: #a89f91; /* Cards / borders / CTA backgrounds */
+  --color-nude: #dcc6aa; /* Hero / large background areas */
+  --color-cream: #f8f5f0; /* General background / section background */
+
+  /* Typography */
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Georgia", serif;
+  --font-mono: "Courier New", Courier, monospace;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem; /* Extra small spacing */
+  --spacing-sm: 0.5rem; /* Small spacing */
+  --spacing-md: 1rem; /* Medium spacing */
+  --spacing-lg: 2rem; /* Large spacing */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Sematic mappings */
+  --color-text-primary: var(--color-chocolate);
+  --color-text-secondary: var(--color-mocca);
+
+  --color-bg-main: var(--color-nude);
+  --color-bg-soft: var(--color-cream);
+
+  --color-accent: var(--color-khaki);
+  --color-border-soft: var(--color-khaki);
+
+  /* Font tokens */
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #171717;
+    --foreground: #f8f5f0;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+/* Typography */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
 }
