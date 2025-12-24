@@ -20,6 +20,7 @@ export default function Header({ locale }: HeaderProps) {
                 <Navigation locale={locale} />
 
                 {/* Social Icons */}
+                <SocialIcons locale{locale}/>
             </div>
         </header>
     );
