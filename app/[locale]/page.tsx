@@ -1,3 +1,4 @@
+import Header from "../components/layout/Header";
 import About from "../components/sections/About";
 import Contact from "../components/sections/Contact";
 import Projects from "../components/sections/Projects";
@@ -8,6 +9,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   
   return (
     <main className="min-h-screen bg-bg-soft">
+
+      <Header locale={locale} />
       {/* Test content to verify fonts and colors work */}
       <div className="p-8">
         <h1 className="font-heading text-5xl text-text-primary mb-4">
