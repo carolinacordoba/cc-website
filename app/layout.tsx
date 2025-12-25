@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -35,6 +35,12 @@ export const metadata: Metadata = {
   },
   description: "Personal portfolio showcasing my work in frontend & backend development using Next.js, React and Tailwind CSS.",
 };
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 export default function RootLayout({
   children,

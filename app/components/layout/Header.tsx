@@ -12,7 +12,7 @@ export default function Header({ locale }: HeaderProps) {
 
     return(
         <header className="sticky top-0 z-50 backdrop-blur-sm">
-            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10 lg:px-16">
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-10 md:px-10 lg:px-16">
 
                 {/* Logo */}
                 <Link href={`/${locale}`} className="hover:opacity-80 transition-opacity"></Link>
