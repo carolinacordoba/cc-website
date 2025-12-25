@@ -20,10 +20,12 @@
   /* Sematic text colors - used with text-* utilities */
   --color-text-primary: var(--color-chocolate);
   --color-text-secondary: var(--color-mocca);
+  --color-text-light: var(--color-cream);
 
   /* Sematic background colors - used with bg-* utilities */
   --color-bg-main: var(--color-nude);
   --color-bg-soft: var(--color-cream);
+  --color-bg-overlay: var(--color-chocolate);
 
   /* Accent colors - used with bg-*, border-*, text-*, etc. */
   --color-accent: var(--color-khaki);
@@ -55,3 +57,23 @@ body {
 .font-body {
   font-family: var(--font-body);
 }
+
+.nav-effect {
+  color: var(--color-cream);
+  display: inline-block;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-effect:hover {
+  transform: scale(1.05);
+}
+
+/* .nav-link-scale {
+  color: var(--color-text-light);
+  display: inline-block;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-link-scale:hover {
+  transform: scale(1.05);
+} */

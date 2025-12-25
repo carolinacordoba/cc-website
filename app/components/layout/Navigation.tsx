@@ -9,39 +9,39 @@ export default function Navigation({ locale }: NavigationProps) {
     const t = getLocaleContent(locale);
 
     return(
-        <nav className="flex items-center gap-4" aria-label="Main Navigation">
-            <ul className="flex items-center gap-4">
+        <nav className="flex items-center gap-6" aria-label="Main Navigation">
+            <ul className="flex items-center gap-12">
                 {/* Home - anchor link to hero section */}
                 <li>
-                    <Link href={`/${locale}#hero`} className="font-body text-sm text-text-secondary hover:text-text-primary transition-colors">
+                    <Link href={`/${locale}#hero`} className="font-heading text-xl nav-effect">
                     {t.nav.home}
                     </Link>
                 </li>
 
                 {/* About - anchor link */}
                 <li>
-                <Link href={`/${locale}#about`} className="font-body text-sm text-text-secondary hover:text-text-primary transition-colors">
+                <Link href={`/${locale}#about`} className="font-heading text-xl nav-effect">
                     {t.nav.about}
                     </Link>
                 </li>
 
                 {/* Projects - anchor link */}
                 <li>
-                <Link href={`/${locale}#projects`} className="font-body text-sm text-text-secondary hover:text-text-primary transition-colors">
+                <Link href={`/${locale}#projects`} className="font-heading text-xl nav-effect">
                     {t.nav.projects}
                     </Link>
                 </li>
 
                 {/* Services - regular route */}
                 <li>
-                <Link href={`/${locale}/services`} className="font-body text-sm text-text-secondary hover:text-text-primary transition-colors">
+                <Link href={`/${locale}/services`} className="font-heading text-xl nav-effect">
                     {t.nav.services}
                     </Link>
                 </li>
 
                 {/* Contact - anchor link */}
                 <li>
-                <Link href={`/${locale}#contact`} className="font-body text-sm text-text-secondary hover:text-text-primary transition-colors">
+                <Link href={`/${locale}#contact`} className="font-heading text-xl nav-effect">
                     {t.nav.contact}
                     </Link>
                 </li>
