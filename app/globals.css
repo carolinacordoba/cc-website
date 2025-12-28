@@ -90,13 +90,46 @@ body {
 }
 
 .icon-effect {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   color: var(--color-bg-main);
   transition: all 300ms ease-in-out;
+  flex-shrink: 0;
+  position: relative;
+  cursor: context-menu;
 }
 
 .icon-effect:hover {
   transform: scale(1.05);
   color: var(--color-bg-overlay);
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  will-change: transform;
+  animation: marquee 90s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
