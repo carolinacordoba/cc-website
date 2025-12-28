@@ -1,6 +1,7 @@
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import Hero from "../components/layout/Hero";
+import IconBanner from "../components/layout/IconBanner";
 import About from "../components/sections/About";
 import Contact from "../components/sections/Contact";
 import Projects from "../components/sections/Projects";
@@ -18,6 +19,7 @@ export default async function HomePage({
       <Header locale={locale} />
       <Hero locale={locale} />
       <About locale={locale} />
+      <IconBanner />
       <Projects params={params} />
       <Services params={params} />
       <Contact params={params} />
