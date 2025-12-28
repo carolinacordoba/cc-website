@@ -9,7 +9,7 @@ export default async function About({ locale }: AboutProps) {
   const t = getLocaleContent(locale);
 
     return (
-      <section id="about" className="flex max-w-7xl mx-auto px-6">
+      <section id="about" className="flex max-w-7xl mx-auto px-6 mb-8">
 
           {/* Text section */}
           <div className="flex-3 flex flex-col">
