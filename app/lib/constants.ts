@@ -11,6 +11,7 @@ import {
   FaMailchimp,
 } from "react-icons/fa";
 import { FaAlgolia } from "react-icons/fa6";
+import { GrGraphQl } from "react-icons/gr";
 import { IoLogoFirebase } from "react-icons/io5";
 import {
   SiAdobe,
@@ -42,6 +43,7 @@ export const skillIcons: Array<{ icon: IconType; label: string }> = [
   { icon: FaNodeJs, label: "Node.js" },
   { icon: IoLogoFirebase, label: "Firebase" },
   { icon: SiMysql, label: "MySQL" },
+  { icon: GrGraphQl, label: "GraphQL" },
   { icon: SiPostman, label: "Postman" },
   { icon: SiCypress, label: "Cypress" },
   { icon: CgMonday, label: "Monday" },
