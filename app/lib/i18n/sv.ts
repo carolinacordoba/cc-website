@@ -14,7 +14,6 @@ export const sv = {
     title: "Hej, Carolina här",
     description:
       "Jag kopplar samman marknadsföring, design och fullstack-utveckling för att skapa e-handelslösningar som konverterar. Tillgänglig för frilansuppdrag och deltidsarbete.",
-    cta: "Hör av dig!",
   },
   projects: {
     title: "Projekt skapade med kärlek",
@@ -31,5 +30,8 @@ export const sv = {
     email: "E-post",
     subject: "Ämne",
     message: "Meddelande",
+  },
+  button: {
+    cta: "Hör av dig!",
   },
 };

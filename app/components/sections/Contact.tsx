@@ -6,13 +6,13 @@ export default async function ContactPage({
     const { locale } = await params;
     
     return (
-      <main className="min-h-screen bg-bg-soft p-8">
+      <section id="contact" className="min-h-screen bg-bg-soft p-8">
         <h1 className="font-heading text-4xl text-text-primary mb-4">
           {locale === 'sv' ? 'Kontakt' : 'Contact'}
         </h1>
         <p className="font-body text-base text-text-secondary">
           Contact form will go here.
         </p>
-      </main>
+      </section>
     );
   }

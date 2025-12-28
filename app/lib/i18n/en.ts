@@ -14,7 +14,6 @@ export const en = {
     title: "Hi, I'm Carolina",
     description:
       "I'm an all-in-one eCommerce engine. Bringing together marketing, design, and full-stack development to build online stores that sell. Currently available for freelance and part-time projects.",
-    cta: "Let's connect!",
   },
   projects: {
     title: "Projects designed & built with love",
@@ -31,5 +30,8 @@ export const en = {
     email: "E-mail",
     subject: "Subject",
     message: "Message",
+  },
+  button: {
+    cta: "Let's connect!",
   },
 };

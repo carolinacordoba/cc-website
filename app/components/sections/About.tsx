@@ -1,5 +1,6 @@
 import { getLocaleContent } from "@/app/lib/i18n";
 import Image from "next/image";
+import Button from "../ui/Button";
 
 interface AboutProps {
   locale: string;
@@ -12,16 +13,17 @@ export default async function About({ locale }: AboutProps) {
 
           {/* Text section */}
           <div className="flex-3 flex flex-col">
-        <h1 className="font-heading text-[7rem] text-text-primary">
+        <h1 className="font-heading text-[7rem] text-text-primary text-shadow">
           {t.about.title}
         </h1>
-        <hr className="top-0 mb-6 border-t w-1/2 border-text-secondary" />
-        <p className="font-body text-2xl text-text-primary">
+        <hr className="top-0 mb-10 border-t w-1/2 border-text-secondary" />
+        <p className="font-body text-3xl text-text-primary mb-12">
           {t.about.description}
         </p>
+        <Button locale={locale} />
         </div>
         {/* Image section */}
-        <div className="relative flex-2 h-full items-center">
+        <div className="relative flex-2 h-full items-center ml-0">
           <Image src={"/images/phonemockup.png"} alt="Mobile phone with portrait" width={1000} height={1000} quality={90}/>
         </div>
       </section>
